@@ -1,0 +1,70 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+.hello-content {
+    padding: 43px 320px 43px 18px;
+}
+.hello-page {
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+
+    &__p {
+        line-height: 1.2em;
+        margin-bottom: 22px;
+
+        &--red {
+            color: #c16827;
+            b {
+                color: #c16827 !important;
+            }
+        }
+        &--blue {
+            color: #4f84a7;
+            b {
+                color: #4f84a7;
+            }
+        }
+        &--images {
+            img {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+        .icon {
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    }
+    .inviter {
+        display: flex;
+        align-items: center;
+
+        &__photo {
+            display: inline-block;
+            height: 98px;
+            width: 98px;
+            min-width: 98px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 15px;
+            //background-size: auto 80%;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    p {
+        line-height: 1.2em;
+        color: $black;
+        vertical-align: middle;
+    }
+    b {
+        color: #4f84a7;
+    }
+}
+
+@import '../media/hello-page.scss';

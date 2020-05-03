@@ -1,0 +1,25 @@
+{
+  "name": "test_staff",
+  "version": "1.0.0",
+  "description": "Basic layout for front-end. Gulp v4.0.2",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/OleksiiMazur",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^3.2.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.2.0",
+    "gulp-install": "^1.1.0",
+    "natives": "^1.1.6",
+    "npm": "^6.4.0"
+  }
+}

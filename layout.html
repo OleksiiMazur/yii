@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello — Yii</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-rim-auto-match" content="none">
+<!--    <link rel="shortcut icon" sizes="16x16" href="images/favicon/16x16-favicon.png" type="image/png">-->
+<!--    <link rel="shortcut icon" sizes="57x57" href="images/favicon/57x57-favicon.png" type="image/png">-->
+<!--    <link rel="shortcut icon" sizes="72x72" href="images/favicon/72x72-favicon.png" type="image/png">-->
+<!--    <link rel="shortcut icon" sizes="114x114" href="images/favicon/114x114-favicon.png" type="image/png">-->
+
+
+    <link href="stylesheet/css/main.css" rel="stylesheet"> <!-- Для всех страниц -->
+    <link href="stylesheet/css/pages/hello-page.css" rel="stylesheet"> <!-- *Для текущей страницы -->
+
+    <script src="js/jquery-2.2.4.min.js"></script> <!-- Для всех страниц -->
+    <script src="js/layout.js"></script> <!-- Для всех страниц -->
+    <script src="js/hello-page.js"></script> <!-- *Для текущей страницы -->
+
+</head>
+<body class="">
+<div class="body-grid">
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="header-left__logo">
+                <img class="lazyClass" alt="logo"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                     data-src="images/header/logo.png" >
+                <img class="white" src="images/header/logo-w.png" alt="info">
+            </a>
+            <ul class="header-left__icons">
+                <li class="icon info-item">
+                    <a href="#">
+                        <img class="lazyClass" data-src="images/header/info.png"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="info">
+                        <img class="white" src="images/header/info-w.png" alt="info">
+                    </a>
+
+                    <ul class="info-item__submenu">
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/rules.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/rules-w.png" alt="info">
+                                Правила и возможности
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/coins.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/coins-w.png" alt="info">
+                                Игровые валюты и курсы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/crown.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/crown-w.png" alt="info">
+                                Зарабатывать на титулах
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/cart.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/cart-w.png" alt="info">
+                                Поставлять товары и услуги
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/max.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/max-w.png" alt="info">
+                                Получать максимум выгод
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/cool.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/cool-w.png" alt="info">
+                                Работать в Интеркомах
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/man.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/man-w.png" alt="info">
+                                Приглашать и зарабатывать
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/partners.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/partners-w.png" alt="info">
+                                Партнерская программа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/info-trasp.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/info-trasp-w.png" alt="info">
+                                Помощь
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img class="lazyClass" data-src="images/header/msg.png"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="msg">
+                        <img class="white" src="images/header/msg-w.png" alt="msg">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/plane.png" alt="plane">
+                        <img class="white" src="images/header/plane-w.png" alt="plane">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/z.png" alt="z">
+                        <img class="white" src="images/header/z-w.png" alt="z">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-center">
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#"><img class="lazyClass"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     data-src="images/header/news.png" alt="icon"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/weather.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/tv.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/radio.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/video.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bones.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/heart.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/hat.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/chair.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/paper.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/persent.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/map.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/law.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/shop.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/key.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/mail.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/refresh.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bag.png" alt="icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="current-user">
+                <a href="#" class="current-user__img person lazyClass lazyBg"
+                   data-src="images/header/photo_default.png"></a>
+                <a href="#" class="current-user__info">
+                    <span>Фамилия</span>
+                    <span>Имя Отчество</span>
+                </a>
+            </div>
+            <ul class="header-right__icons">
+                <li>
+                    <a href="#">
+                        <img data-src="images/header/person.png" class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="icon">
+                        <img src="images/header/person-w.png" alt="icon" class="white">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img data-src="images/header/money.png" class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="icon">
+                        <img src="images/header/money-w.png" alt="icon" class="white">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img data-src="images/header/logout.png" class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="icon">
+                        <img src="images/header/logout-w.png" alt="icon" class="white">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="content-left">
+            <div class="invite">
+                <a href="#" class="btn btn--orange">
+                    Пригласить
+                </a>
+                <p class="invite__text">
+                    Нажмите, чтобы скопировать реферальную
+                    ссылку для приглашений на сайт и получения
+                    реферальных доходов
+                </p>
+                <a href="#" class="invite__details">
+                    Подробности здесь
+                </a>
+            </div>
+
+            <div class="referrals">
+                <ul class="referrals__list">
+                    <li class="active referrals__title">
+                        Все рефералы (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 1 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 2 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 3 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 4 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 5 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 6 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 7 (<span>0</span>)
+                    </li>
+                    <li>
+                        Рефереры (<span>0</span>)
+                    </li>
+                </ul>
+                <a href="#" class="btn btn--green">
+                    Банеры
+                </a>
+            </div>
+        </div>
+        <div class="content-center">
+            <div class="hello-page">
+                <div class="hello-page__p">
+                    Здравствуйте, <b>Имя Фамилия!</b>&nbsp;&nbsp;Добро пожаловать в социально-деловую игру и цифровое государство «МИР»!!!
+                </div>
+                <div class="hello-page__p inviter">
+                    <div class="inviter__photo person lazyClass lazyBg bg"
+                         data-src="images/header/photo_default.png">
+                    </div>
+                    <span>
+                        В первую очередь, разрешите Вам передать Большой Привет!&nbsp;&nbsp;От руководства Мировой Интернациональной Республики МИР и от Вашего реферера – того, кто пригласил Вас к нам на сайт.&nbsp;&nbsp;Кстати, он за это заработал 100 ролларов (см. ниже).&nbsp;&nbsp;Если хотите, то можете увидеть его профиль и написать ему приветственное сообщение.
+                    </span>
+                </div>
+                <div class="hello-page__p hello-page__p--images">
+                    <img data-src="images/hello-page/rollar.png" class="lazyClass lazyBg"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                         alt="rollar">
+                    <img data-src="images/hello-page/sertificate.jpg" class="lazyClass lazyBg"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                         alt="rollar">
+                </div>
+                <div class="hello-page__p">
+                    <b>Получите 850 ролларов «подъемных» и Сертификат Резидента МИРа! </b>
+                </div>
+                <div class="hello-page__p">
+                    Выполните три простых действия:
+                </div>
+                <div class="hello-page__p">
+                    <b>1. Заполните профиль</b> – нажмите на иконку
+                    <img data-src="images/hello-page/person.png" class="lazyClass icon"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC" alt="icon">
+                    справа наверху.
+                </div>
+                <div class="hello-page__p">
+                    В профиле обязательно загрузите Вашу основную фотографию и несколько дополнительных (сколько захотите).
+                </div>
+                <div class="hello-page__p">
+                    <b>2. Приведите трех рефералов </b>– пригласите на сайт несколько друзей, знакомых, коллег, членов семьи в возрасте от 18 лет, чтобы как минимум трое из них зарегистрировались на сайте.&nbsp;&nbsp;После регистрации Вы их увидите на этой странице.&nbsp;&nbsp;За каждого приглашенного Вы получите по 100 ролларов.&nbsp;&nbsp;Дальше Вы будет получать роллары не только за первый вровень приглашенных – тех, кого пригласили Вы, но и за несколько уровней тех, кого пригласили приглашенные Вами по реферальной программе.&nbsp;&nbsp;Для приглашения на сайт скопируйте Вашу персональную реферальную ссылку, нажав на желтую кнопку «Пригласить» в реферальном меню на голубой панели слева.</div>
+                <div class="hello-page__p">
+                    Для мобильных устройств и малых планшетов нажмите на иконку
+                    <img data-src="images/hello-page/dots.png" class="lazyClass icon"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC" alt="icon">
+                    в меню рядом с бабочкой слева наверху.
+                </div>
+                <div class="hello-page__p">
+                    <b>3. Пройдите идентификацию</b> – после того, как Вы оформите профиль и приведете трех рефералов, Вам пришлют специальную ссылку на процедуру идентификации в Службе Натурализации Министерства Внутренних Дел МИРа.&nbsp;&nbsp;Нужно будет подтвердить свой телефон и email, заполнить краткую анкету с указанием Вашего имени и фамилии на английском языке.&nbsp;&nbsp;850 ролларов «подъемных» Вам зачислят на Ваш счет здесь на сайте и пришлют Сертификат Резидента МИРа. Ссылку на процедуру идентификации Вам пришлют в чат сайта в течение 21 дня после регистрации последнего из Ваших первых трех рефералов.&nbsp;&nbsp;Это время понадобится для изучения Вашего профиля и активности на сайте, профилей и активностей Ваших рефералов.
+                </div>
+                <div class="hello-page__p">
+                    О правилах и возможностях нашей игры и ее государства «МИР» Вы можете узнать на инфо-сайте.&nbsp;&nbsp;Кстати, абсолютно вся необходимая информация и все наши сервисы всегда у Вас под рукой в меню сверху – пользуйтесь на здоровье!&nbsp;&nbsp;Некоторые наши сервисы еще не открылись – их иконки пока тусклые, но будут зажигаться по мере открытия в самое ближайшее время.
+                </div>
+                <div class="hello-page__p hello-page__p--red">
+                    <b>ВНИМАНИЕ!!!</b>  Регистрировать более одного аккаунта на одного пользователя от жадности – запрещено и бессмысленно, так как позже нужно будет пройти двухэтапную идентификацию в Службе Натурализации Министерства Внутренних Дел МИРа.&nbsp;&nbsp;В случае обнаружения подлога, все данные пользователя попадут в черный список с блокировкой всех аккаунтов и конфискацией всех средств на счетах сайта.
+                </div>
+                <div class="hello-page__p hello-page__p--blue">
+                    <b>ВНИМАНИЕ!!!</b>&nbsp;&nbsp;Данное сообщение от начала и до конца будет удалено сразу после регистрации на сайте Вашего первого реферала, карточка которого, как и других, будет показываться на этой странице.
+                </div>
+            </div>
+        </div>
+        <div class="content-right opened">
+            <div class="content-right__header">
+                <div class="side-arrow"></div>
+                <span class="leaders">
+                    Лидеры
+                </span>
+                <div class="octa-btn by-name active">
+                    По чел.
+                </div>
+                <div class="octa-btn by-money">
+                    По $$$
+                </div>
+            </div>
+
+            <ul class="ref-list">
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="chat">
+        <div class="chat__btn">
+            <img data-src="images/content/chat.png" class="lazyClass"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                 alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
