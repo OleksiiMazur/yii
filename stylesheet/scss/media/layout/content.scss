@@ -3,8 +3,125 @@
 // mixins
 @import '../../abstracts/mixins';
 
-@media screen and (max-width:1139px) {
+
+@media screen and (max-width:1279px) {
+    .main-layout {
+        .content {
+            grid-template-columns: 320px 1fr;
+            padding-bottom: 64px;
+
+            &-center {
+                padding: 26px 10px 26px 14px;
+            }
+            &-right {
+                z-index: 5;
+                height: calc(100% - 45px);
+                top: calc(100% - 64px);
+                left: 0;
+                right: 0;
+                width: 100%;
+                transform: translate(0);
+                padding: 0 8px;
+
+                &__header {
+                    border: none;
+                    overflow: hidden;
+                    max-height: 0;
+                    padding: 0;
+                    margin: 0;
+
+                    .leaders {
+                        font-family: "OpenSans-Regular";
+                        font-size: 14px;
+                    }
+                }
+
+                &.opened {
+                    transform: translateY(calc(-100% - -64px));
+
+                    .content-right__header {
+                        max-height: 78px;
+                        margin: 14px 0 20px;
+                    }
+                    .bottom-arrow {
+                        &--open {
+                            display: none;
+                        }
+                        &--close {
+                            top: calc(100% - 21px);
+                        }
+                    }
+                }
+                .side-arrow {
+                    display: none;
+                }
+                .bottom-arrow {
+                    z-index: 10;
+                    display: block;
+                    position: fixed;
+                    bottom: 8px;
+                    left: 11px;
+                    height: 16px;
+                    width: 23px;
+
+                    img {
+                        display: block;
+                        max-width: 100%;
+                    }
+                    &--open {
+                        display: block;
+                        top: 6px;
+                    }
+                    &--close {
+                        display: block;
+                        top: 44px;
+                    }
+                }
+                .ref-list {
+                    z-index: 0;
+                    padding-left: 45px;
+
+                    &__item {
+                        width: 110px;
+                        margin-right: 24px;
+                        margin-bottom: 29px;
+
+                        &:nth-child(odd) {
+                            margin-right: 24px;
+                        }
+                    }
+                    &__img {
+                        height: 40px;
+                        width: 40px;
+                        margin-right: 7px;
+                    }
+                    &__info {
+                        span {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .chat {
+            &__btn {
+                right: 12px;
+                bottom: 84px;
+                box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.45);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1023px) {
+
 }
 
 @media screen and (max-width:767px) {
+
+}
+
+@media screen and (max-width:480px) {
+
 }

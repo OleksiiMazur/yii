@@ -21,7 +21,7 @@
     <script src="js/hello-page.js"></script> <!-- *Для текущей страницы -->
 
 </head>
-<body class="">
+<body class="main-layout"> <!-- main-layout — класс для страниц Профиля (Приветствие и т.д.). Лучше добавить через PHP для более быстрого подключения стилей -->
 <div class="body-grid">
     <header class="header">
         <div class="header-left">
@@ -156,11 +156,13 @@
                 <div class="hamburger__line"></div>
                 <div class="hamburger__line"></div>
             </div>
-            <ul>
+            <ul class="desktop">
                 <li>
-                    <a href="#"><img class="lazyClass"
-                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
-                                     data-src="images/header/news.png" alt="icon"></a>
+                    <a href="#" title="Новости">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/news.png" alt="icon">
+                    </a>
                 </li>
                 <li>
                     <a href="#">
@@ -280,6 +282,152 @@
                              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
                              data-src="images/header/bag.png" alt="icon">
                     </a>
+                </li>
+            </ul>
+            <ul class="mobile">
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/news-m.png" alt="icon">
+                    </a>
+                    <span>Новости</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/weather-m.png" alt="icon">
+                    </a>
+                    <span>Погода</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/tv-m.png" alt="icon">
+                    </a>
+                    <span>ТВ</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/radio-m.png" alt="icon">
+                    </a>
+                    <span>Радио</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/video-m.png" alt="icon">
+                    </a>
+                    <span>Кино</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bones-m.png" alt="icon">
+                    </a>
+                    <span>Игры</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/heart-m.png" alt="icon">
+                    </a>
+                    <span>Знакомства</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/hat-m.png" alt="icon">
+                    </a>
+                    <span>Академия</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/chair-m.png" alt="icon">
+                    </a>
+                    <span>Работа</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/paper-m.png" alt="icon">
+                    </a>
+                    <span>Доставка</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/persent-m.png" alt="icon">
+                    </a>
+                    <span>Купоны</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/map-m.png" alt="icon">
+                    </a>
+                    <span>Карта</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/law-m.png" alt="icon">
+                    </a>
+                    <span>Тендеры</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/shop-m.png" alt="icon">
+                    </a>
+                    <span>Маркетплейс</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/key-m.png" alt="icon">
+                    </a>
+                    <span>Прокат</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/mail-m.png" alt="icon">
+                    </a>
+                    <span>Билеты</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/refresh-m.png" alt="icon">
+                    </a>
+                    <span>Офис</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bag-m.png" alt="icon">
+                    </a>
+                    <span>Бартабан</span>
                 </li>
             </ul>
         </div>
@@ -430,7 +578,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-right opened">
+        <div class="content-right">
             <div class="content-right__header">
                 <div class="side-arrow"></div>
                 <span class="leaders">
@@ -545,6 +693,14 @@
                     </a>
                 </li>
             </ul>
+
+            <div class="bottom-arrow bottom-arrow--open">
+                <img src="images/content/bottom-arrow.png" alt="arrow">
+            </div>
+            <div class="bottom-arrow bottom-arrow--close">
+                <img src="images/content/bottom-arrow-close.png" alt="arrow">
+            </div>
+
         </div>
     </section>
 

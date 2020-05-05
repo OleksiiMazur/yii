@@ -125,7 +125,6 @@
     &-center {
         background-color: #717171;
         padding: 3px 14px;
-        overflow: auto;
 
         .hamburger {
             display: none;
@@ -135,6 +134,9 @@
             display: flex;
             align-items: center;
 
+            &.mobile {
+                display: none;
+            }
             li {
                 margin-right: 26px;
 

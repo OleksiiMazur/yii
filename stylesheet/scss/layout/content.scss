@@ -173,6 +173,9 @@
                 transform: rotateY(180deg) translateX(-10px) scale(1.1);
             }
         }
+        .bottom-arrow {
+            display: none;
+        }
         &__header {
             //position: relative;
             z-index: 2;
@@ -258,6 +261,8 @@
 }
 
 .chat {
+    z-index: 50;
+
     &__btn {
         cursor: pointer;
         display: flex;

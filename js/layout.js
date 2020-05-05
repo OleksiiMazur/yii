@@ -98,7 +98,6 @@ let Layout = function () {
         }
     };
 
-
     this.safariClass = function() {
         let is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         if (is_safari) {
@@ -109,33 +108,18 @@ let Layout = function () {
     this.mobileMenu = function () {
         if(document.querySelector('.hamburger')) {
             let hamburger = document.querySelector('.hamburger'),
-                body = document.querySelector('body'),
-                menu = document.querySelector('.header-menu'),
-                link = document.querySelectorAll('.main-menu li a'),
-                logo = document.querySelector('.header-wrap__logo'),
-                contactsLink = document.querySelectorAll('.header-contacts li a');
+                menu = document.querySelector('.header-center > ul.mobile'),
+                link = document.querySelectorAll('.header-center > ul a');
 
             hamburger.addEventListener("click", function(){
                 menu.classList.toggle("opened");
-                hamburger.classList.toggle("cross");
-                body.hasAttribute("data-hidden") ? body.removeAttribute("data-hidden") : body.setAttribute("data-hidden", "true");
             });
 
             function closeMenu(){
                 menu.classList.remove("opened");
-                hamburger.classList.remove("cross");
-                body.removeAttribute("data-hidden");
             }
-            logo.addEventListener("click", function(){
-                closeMenu();
-            });
             for(let i=0; i<link.length; i++) {
                 link[i].addEventListener("click", function(){
-                    closeMenu();
-                });
-            }
-            for(let i=0; i<contactsLink.length; i++) {
-                contactsLink[i].addEventListener("click", function(){
                     closeMenu();
                 });
             }
@@ -144,6 +128,8 @@ let Layout = function () {
 
     this.sideMenu = function () {
         let sideArrow = document.querySelector('.side-arrow');
+        let bottomArrowO = document.querySelector('.bottom-arrow--open');
+        let bottomArrowC = document.querySelector('.bottom-arrow--close');
         let rightSide = document.querySelector('.content-right');
         let centerContent = document.querySelector('.content-center');
 
@@ -154,6 +140,14 @@ let Layout = function () {
         }
 
         sideArrow.addEventListener('click', function () {
+            rightSide.classList.toggle('opened');
+            centerContent.classList.toggle('with-aside');
+        });
+        bottomArrowO.addEventListener('click', function () {
+            rightSide.classList.toggle('opened');
+            centerContent.classList.toggle('with-aside');
+        });
+        bottomArrowC.addEventListener('click', function () {
             rightSide.classList.toggle('opened');
             centerContent.classList.toggle('with-aside');
         });
