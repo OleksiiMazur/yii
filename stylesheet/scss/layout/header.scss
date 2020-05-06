@@ -45,6 +45,9 @@
             height: 100%;
 
             li {
+                &.left-panel-icon {
+                    display: none;
+                }
                 &:not(:last-child) {
                     margin-right: 32px;
                 }

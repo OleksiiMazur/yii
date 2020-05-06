@@ -96,7 +96,7 @@
             .hamburger {
                 display: block;
                 position: relative;
-                height: 39px;
+                height: 100%;
                 width: 22px;
                 padding: 11px 3px;
 
@@ -106,7 +106,7 @@
                     width: 100%;
                     height: 4px;
                     margin-bottom: 2px;
-                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+                    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 
                     &:nth-child(1) {
                     }
@@ -278,6 +278,13 @@
             }
             &__icons {
                 li {
+                    &.left-panel-icon {
+                        display: block;
+
+                        img {
+                            width: 22px;
+                        }
+                    }
                     &:not(:last-child) {
                     }
                     &:hover {
@@ -372,11 +379,19 @@
 
 @media screen and (max-width:767px) {
     .header {
+        grid-template-columns: 192px 1fr 88px;
+        grid-template-rows: 40px;
 
         img {
         }
         &-left {
+            padding: 0 8px;
+
             &__logo {
+                width: 40px;
+                line-height: 34px;
+                margin-right: 5px;
+
                 &:hover {
                     img {
                         &.white {
@@ -389,8 +404,20 @@
                 }
             }
             &__icons {
-                li {
+                & > li {
+                    max-width: 18px;
+                    height: 100%;
+                    line-height: 40px;
+                    box-sizing: content-box;
+                    padding: 0 6px;
+
+                    &.left-panel-icon {
+                        img {
+                            width: auto;
+                        }
+                    }
                     &:not(:last-child) {
+                        margin-right: 0;
                     }
                     &:hover {
                         & > a {
@@ -402,16 +429,18 @@
                     }
                     a {
                         img {
-                            &.white {
-                            }
+                            max-height: 19px;
                         }
                     }
                     &.info-item {
                         &:hover {
-                            .info-item__submenu {
-                            }
+                            background-color: #356c90;
                         }
                         .info-item__submenu {
+                            background-color: #356c90;
+                            left: -78px;
+                            top: 40px;
+
                             li {
                                 a {
                                     &:hover {
@@ -426,39 +455,37 @@
             }
         }
         &-center {
+            padding: 0;
+
             .hamburger {
+                width: 38px;
+                padding: 11px;
             }
             ul {
-                li {
-                    &.disable {
-                        a {
-                        }
-                    }
-                    &:hover {
-                        a {
-                        }
-                    }
-                    a {
-                        img {
-                        }
+                &.mobile {
+                    position: fixed;
+                    overflow: auto;
+                    left: 0;
+                    top: 40px;
+                    width: 100%;
+                    padding: 13px 8px 25px;
+
+                    &.opened {
+                        max-height: calc(100vh - 40px);
                     }
                 }
             }
         }
         &-right {
+            padding: 5px 8px;
+
             .current-user {
-                &:hover {
-                    .current-user__info {
-                    }
-                }
-                &__img {
-                }
-                &__info {
-                    span {
-                    }
-                }
+                display: none;
             }
             &__icons {
+                justify-content: space-between;
+                width: 100%;
+
                 li {
                     &:hover {
                         a {
@@ -473,6 +500,7 @@
                         }
                     }
                     &:not(:last-child) {
+                        margin-right: 0;
                     }
                     a {
                         img {
