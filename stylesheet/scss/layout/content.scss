@@ -227,6 +227,9 @@
                 width: 140px;
                 margin-bottom: 19px;
 
+                a {
+                    color: #2d2d2d;
+                }
                 &:nth-child(odd) {
                     margin-right: 5px;
                 }
@@ -253,6 +256,7 @@
                     font-family: "OpenSans-Regular";
                     font-size: 13px;
                     line-height: 1.3em;
+                    color: #2d2d2d;
                     display: block;
                 }
             }

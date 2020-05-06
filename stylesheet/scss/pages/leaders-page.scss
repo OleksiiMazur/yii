@@ -1,0 +1,105 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+
+.leaders-page {
+    .switchers {
+        &__title {
+            display: inline-block;
+            font-size: 14px;
+            color: #292929;
+            margin-right: 11px;
+        }
+        &__item {
+            margin-right: 4px;
+        }
+    }
+    .leaders-list {
+        padding-top: 23px;
+
+        .leader {
+            display: inline-block;
+            background-color: #dff3df;
+            border: 1px solid #9fcbc3;
+            width: 300px;
+            height: 170px;
+            padding: 12px 9px 9px 12px;
+            margin-right: 7px;
+            margin-bottom: 10px;
+            transition: box-shadow 0.2s ease;
+
+            &__left {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 7px;
+            }
+            &__right {
+                display: inline-block;
+                vertical-align: top;
+                max-width: 53%;
+            }
+            &__img {
+                width: 105px;
+                height: 105px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-bottom: 12px;
+            }
+            &__btn {
+                font-family: "OpenSans-Bold";
+                //display: flex;
+                font-size: 12px;
+                background-color: #41d341;
+                color: #fff;
+                height: 30px;
+                padding: 0 8px;
+                width: 100%;
+
+                img {
+                    display: inline-block;
+                    vertical-align: top;
+                    max-width: 100%;
+                    margin-top: 5px;
+                    margin-right: 3px;
+                }
+                span {
+                    display: inline-block;
+                    vertical-align: top;
+                    line-height: 26px;
+                }
+            }
+            &__name {
+                font-family: "OpenSans-Bold";
+                font-size: 14px;
+                color: #5f9abb;
+                line-height: 1.2em;
+                margin-bottom: 11px;
+            }
+            &__place {
+                font-family: "OpenSans-Regular";
+                font-size: 12px;
+                color: #7e7e7e;
+                line-height: 1.2em;
+            }
+            &__last-online {
+                font-family: "OpenSans-Regular";
+                font-size: 12px;
+                color: #7e7e7e;
+                line-height: 1.2em;
+                margin-bottom: 10px;
+            }
+            &__info {
+                font-family: "OpenSans-Regular";
+                font-size: 16px;
+                color: #292929;
+            }
+            &:hover {
+                box-shadow: 2px 2px 3px rgba(41, 41, 41, 0.41);
+            }
+        }
+    }
+}
+
+@import '../media/leaders-page';

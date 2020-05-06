@@ -1,0 +1,68 @@
+// site properties
+@import '../abstracts/variables';
+// mixins
+@import '../abstracts/mixins';
+
+
+@media screen and (max-width:1600px) {
+    .leaders-page {
+        .leaders-list {
+            .leader {
+                width: 277px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .leaders-page {
+        .leaders-list {
+            .leader {
+                width: calc((100% / 2) - 10px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .leaders-page {
+        .leaders-list {
+            .leader {
+                width: 242px;
+                padding: 11px 9px 6px 10px;
+                margin-right: 3px;
+
+                &__left {
+                }
+                &__right {
+                    max-width: 46%;
+                }
+                &__img {
+                }
+                &__btn {
+                    img {
+                    }
+                    span {
+                    }
+                }
+                &__name {
+                    font-size: 12px;
+                }
+                &__place {
+                    font-size: 11px;
+                }
+                &__last-online {
+                    font-size: 11px;
+                }
+                &__info {
+                    font-size: 13px;
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+}

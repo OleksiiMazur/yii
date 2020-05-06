@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaders — Yii</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-rim-auto-match" content="none">
+<!--    <link rel="shortcut icon" sizes="16x16" href="images/favicon/16x16-favicon.png" type="image/png">-->
+<!--    <link rel="shortcut icon" sizes="57x57" href="images/favicon/57x57-favicon.png" type="image/png">-->
+<!--    <link rel="shortcut icon" sizes="72x72" href="images/favicon/72x72-favicon.png" type="image/png">-->
+<!--    <link rel="shortcut icon" sizes="114x114" href="images/favicon/114x114-favicon.png" type="image/png">-->
+
+
+    <link href="stylesheet/css/main.css" rel="stylesheet"> <!-- Для всех страниц -->
+    <link href="stylesheet/css/pages/leaders-page.css" rel="stylesheet"> <!-- *Для текущей страницы -->
+
+    <script src="js/jquery-2.2.4.min.js"></script> <!-- Для всех страниц -->
+    <script src="js/layout.js"></script> <!-- Для всех страниц -->
+
+</head>
+<body class="main-layout"> <!-- main-layout — класс для страниц Профиля (Приветствие и т.д.). Лучше добавить через PHP для более быстрого подключения стилей -->
+<div class="body-grid">
+    <header class="header">
+        <div class="header-left">
+            <a href="#" class="header-left__logo">
+                <img class="lazyClass" alt="logo"
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                     data-src="images/header/logo.png" >
+                <img class="white" src="images/header/logo-w.png" alt="info">
+            </a>
+            <ul class="header-left__icons">
+                <li class="icon info-item">
+                    <a href="#">
+                        <img class="lazyClass" data-src="images/header/info.png"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="info">
+                        <img class="white" src="images/header/info-w.png" alt="info">
+                    </a>
+
+                    <ul class="info-item__submenu">
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/rules.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/rules-w.png" alt="info">
+                                Правила и возможности
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/coins.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/coins-w.png" alt="info">
+                                Игровые валюты и курсы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/crown.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/crown-w.png" alt="info">
+                                Зарабатывать на титулах
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/cart.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/cart-w.png" alt="info">
+                                Поставлять товары и услуги
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/max.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/max-w.png" alt="info">
+                                Получать максимум выгод
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/cool.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/cool-w.png" alt="info">
+                                Работать в Интеркомах
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/man.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/man-w.png" alt="info">
+                                Приглашать и зарабатывать
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/partners.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/partners-w.png" alt="info">
+                                Партнерская программа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="lazyClass" data-src="images/header/info-trasp.png"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                                     alt="info">
+                                <img class="white" src="images/header/info-trasp-w.png" alt="info">
+                                Помощь
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img class="lazyClass" data-src="images/header/msg.png"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="msg">
+                        <img class="white" src="images/header/msg-w.png" alt="msg">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/plane.png" alt="plane">
+                        <img class="white" src="images/header/plane-w.png" alt="plane">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/z.png" alt="z">
+                        <img class="white" src="images/header/z-w.png" alt="z">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-center">
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div>
+            <ul class="desktop">
+                <li>
+                    <a href="#" title="Новости">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/news.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/weather.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/tv.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/radio.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/video.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bones.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/heart.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/hat.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/chair.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/paper.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/persent.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/map.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/law.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/shop.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/key.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/mail.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/refresh.png" alt="icon">
+                    </a>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bag.png" alt="icon">
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile">
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/news-m.png" alt="icon">
+                    </a>
+                    <span>Новости</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/weather-m.png" alt="icon">
+                    </a>
+                    <span>Погода</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/tv-m.png" alt="icon">
+                    </a>
+                    <span>ТВ</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/radio-m.png" alt="icon">
+                    </a>
+                    <span>Радио</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/video-m.png" alt="icon">
+                    </a>
+                    <span>Кино</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bones-m.png" alt="icon">
+                    </a>
+                    <span>Игры</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/heart-m.png" alt="icon">
+                    </a>
+                    <span>Знакомства</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/hat-m.png" alt="icon">
+                    </a>
+                    <span>Академия</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/chair-m.png" alt="icon">
+                    </a>
+                    <span>Работа</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/paper-m.png" alt="icon">
+                    </a>
+                    <span>Доставка</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/persent-m.png" alt="icon">
+                    </a>
+                    <span>Купоны</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/map-m.png" alt="icon">
+                    </a>
+                    <span>Карта</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/law-m.png" alt="icon">
+                    </a>
+                    <span>Тендеры</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/shop-m.png" alt="icon">
+                    </a>
+                    <span>Маркетплейс</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/key-m.png" alt="icon">
+                    </a>
+                    <span>Прокат</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/mail-m.png" alt="icon">
+                    </a>
+                    <span>Билеты</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/refresh-m.png" alt="icon">
+                    </a>
+                    <span>Офис</span>
+                </li>
+                <li class="disable">
+                    <a href="#">
+                        <img class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             data-src="images/header/bag-m.png" alt="icon">
+                    </a>
+                    <span>Бартабан</span>
+                </li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="current-user">
+                <a href="#" class="current-user__img person lazyClass lazyBg"
+                   data-src="images/header/photo_default.png"></a>
+                <a href="#" class="current-user__info">
+                    <span>Фамилия</span>
+                    <span>Имя Отчество</span>
+                </a>
+            </div>
+            <ul class="header-right__icons">
+                <li>
+                    <a href="#">
+                        <img data-src="images/header/person.png" class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="icon">
+                        <img src="images/header/person-w.png" alt="icon" class="white">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img data-src="images/header/money.png" class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="icon">
+                        <img src="images/header/money-w.png" alt="icon" class="white">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img data-src="images/header/logout.png" class="lazyClass"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                             alt="icon">
+                        <img src="images/header/logout-w.png" alt="icon" class="white">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="content-left">
+            <div class="invite">
+                <a href="#" class="btn btn--orange">
+                    Пригласить
+                </a>
+                <p class="invite__text">
+                    Нажмите, чтобы скопировать реферальную
+                    ссылку для приглашений на сайт и получения
+                    реферальных доходов
+                </p>
+                <a href="#" class="invite__details">
+                    Подробности здесь
+                </a>
+            </div>
+
+            <div class="referrals">
+                <ul class="referrals__list">
+                    <li class="active referrals__title">
+                        Все рефералы (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 1 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 2 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 3 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 4 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 5 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 6 (<span>0</span>)
+                    </li>
+                    <li>
+                        Уровень 7 (<span>0</span>)
+                    </li>
+                    <li>
+                        Рефереры (<span>0</span>)
+                    </li>
+                </ul>
+                <a href="#" class="btn btn--green">
+                    Банеры
+                </a>
+            </div>
+        </div>
+        <div class="content-center">
+            <div class="leaders-page">
+                <div class="switchers">
+                    <div class="switchers__title">
+                        Сортировка:
+                    </div>
+                    <div class="switchers__item octa-btn active">
+                        По дате
+                    </div>
+                    <div class="switchers__item octa-btn octa-btn--long">
+                        По местожительству
+                    </div>
+                    <div class="switchers__item octa-btn">
+                        По чел.
+                    </div>
+                    <div class="switchers__item octa-btn">
+                        По $
+                    </div>
+                </div>
+
+                <ul class="leaders-list">
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                    <li class="leader">
+                        <div class="leader__left">
+                            <div class="leader__img lazyClass lazyBg bg"
+                                 data-src="images/header/photo_default.png">
+
+                            </div>
+                            <a href="#" class="leader__btn btn">
+                                <img src="images/leaders-page/msg-icon.png" alt="msg">
+                                <span>
+                                    Связаться
+                                </span>
+                            </a>
+                        </div>
+                        <div class="leader__right">
+                            <div class="leader__name">
+                                Фамилия
+                                Имя Отчество
+                            </div>
+                            <div class="leader__place">
+                                Россия, Москва
+                            </div>
+                            <div class="leader__last-online">
+                                10.02.20 в 23:16
+                            </div>
+                            <div class="leader__info">
+                                У1 5 чел. $85 000
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="content-right__header">
+                <div class="side-arrow"></div>
+                <span class="leaders">
+                    Лидеры
+                </span>
+                <div class="octa-btn by-name active">
+                    По чел.
+                </div>
+                <div class="octa-btn by-money">
+                    По $$$
+                </div>
+            </div>
+
+            <ul class="ref-list">
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ref-list__item">
+                    <a href="#">
+                        <div class="ref-list__img bg lazyClass lazyBg person"
+                             data-src="images/header/photo_default.png">
+                        </div>
+                        <p class="ref-list__info">
+                            <span>1 254 чел.</span>
+                            <span>$85 000</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="bottom-arrow bottom-arrow--open">
+                <img src="images/content/bottom-arrow.png" alt="arrow">
+            </div>
+            <div class="bottom-arrow bottom-arrow--close">
+                <img src="images/content/bottom-arrow-close.png" alt="arrow">
+            </div>
+
+        </div>
+    </section>
+
+    <div class="chat">
+        <div class="chat__btn">
+            <img data-src="images/content/chat.png" class="lazyClass"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAAGElEQVR42mNkIBkwjmoZ1TKqZVTLENcCAEW6ABqcVA4WAAAAAElFTkSuQmCC"
+                 alt="chat">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

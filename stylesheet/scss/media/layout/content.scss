@@ -10,6 +10,38 @@
             grid-template-columns: 320px 1fr;
             padding-bottom: 64px;
 
+            &-left {
+                .invite {
+                    &__text {
+                    }
+                    &__details {
+
+                        &:hover {
+                        }
+                    }
+                }
+
+                .referrals {
+                    &__list {
+                        li {
+                            &.referrals__title {
+                                &:before {
+                                }
+                            }
+                            &:hover {
+                            }
+                            &:before {
+                            }
+                            &.active {
+                                &:before {
+                                }
+                            }
+                        }
+                    }
+                    .btn {
+                    }
+                }
+            }
             &-center {
                 padding: 26px 10px 26px 14px;
             }
@@ -98,6 +130,7 @@
                     &__info {
                         span {
                             font-size: 11px;
+                            color: #2d2d2d;
                         }
                     }
                 }
@@ -116,12 +149,261 @@
 
 @media screen and (max-width:1023px) {
 
+    .content {
+        grid-template-columns: 0 1fr;
+    }
+        .main-layout {
+        .content {
+            grid-template-columns: 0 1fr;
+
+            &-left {
+                .invite {
+                    &__text {
+                    }
+                    &__details {
+
+                        &:hover {
+                        }
+                    }
+                }
+
+                .referrals {
+                    &__list {
+                        li {
+                            &.referrals__title {
+                                &:before {
+                                }
+                            }
+                            &:hover {
+                            }
+                            &:before {
+                            }
+                            &.active {
+                                &:before {
+                                }
+                            }
+                        }
+                    }
+                    .btn {
+                    }
+                }
+            }
+            &-center {
+            }
+            &-right {
+                &__header {
+                    .leaders {
+                    }
+                }
+
+                &.opened {
+                    .content-right__header {
+                    }
+                    .bottom-arrow {
+                        &--open {
+                        }
+                        &--close {
+                        }
+                    }
+                }
+                .side-arrow {
+                }
+                .bottom-arrow {
+                    img {
+                    }
+                    &--open {
+                    }
+                    &--close {
+                    }
+                }
+                .ref-list {
+                    &__item {
+                        &:nth-child(odd) {
+                        }
+                    }
+                    &__img {
+                    }
+                    &__info {
+                        span {
+                        }
+                    }
+                }
+            }
+        }
+
+        .chat {
+            &__btn {
+            }
+        }
+    }
 }
 
 @media screen and (max-width:767px) {
+    .main-layout {
+        .content {
+            &-left {
+                .invite {
+                    &__text {
+                    }
+                    &__details {
 
+                        &:hover {
+                        }
+                    }
+                }
+
+                .referrals {
+                    &__list {
+                        li {
+                            &.referrals__title {
+                                &:before {
+                                }
+                            }
+                            &:hover {
+                            }
+                            &:before {
+                            }
+                            &.active {
+                                &:before {
+                                }
+                            }
+                        }
+                    }
+                    .btn {
+                    }
+                }
+            }
+            &-center {
+            }
+            &-right {
+                &__header {
+                    .leaders {
+                    }
+                }
+
+                &.opened {
+                    .content-right__header {
+                    }
+                    .bottom-arrow {
+                        &--open {
+                        }
+                        &--close {
+                        }
+                    }
+                }
+                .side-arrow {
+                }
+                .bottom-arrow {
+                    img {
+                    }
+                    &--open {
+                    }
+                    &--close {
+                    }
+                }
+                .ref-list {
+                    &__item {
+                        &:nth-child(odd) {
+                        }
+                    }
+                    &__img {
+                    }
+                    &__info {
+                        span {
+                        }
+                    }
+                }
+            }
+        }
+
+        .chat {
+            &__btn {
+            }
+        }
+    }
 }
 
 @media screen and (max-width:480px) {
+    .main-layout {
+        .content {
+            &-left {
+                .invite {
+                    &__text {
+                    }
+                    &__details {
 
+                        &:hover {
+                        }
+                    }
+                }
+
+                .referrals {
+                    &__list {
+                        li {
+                            &.referrals__title {
+                                &:before {
+                                }
+                            }
+                            &:hover {
+                            }
+                            &:before {
+                            }
+                            &.active {
+                                &:before {
+                                }
+                            }
+                        }
+                    }
+                    .btn {
+                    }
+                }
+            }
+            &-center {
+            }
+            &-right {
+                &__header {
+                    .leaders {
+                    }
+                }
+
+                &.opened {
+                    .content-right__header {
+                    }
+                    .bottom-arrow {
+                        &--open {
+                        }
+                        &--close {
+                        }
+                    }
+                }
+                .side-arrow {
+                }
+                .bottom-arrow {
+                    img {
+                    }
+                    &--open {
+                    }
+                    &--close {
+                    }
+                }
+                .ref-list {
+                    &__item {
+                        &:nth-child(odd) {
+                        }
+                    }
+                    &__img {
+                    }
+                    &__info {
+                        span {
+                        }
+                    }
+                }
+            }
+        }
+
+        .chat {
+            &__btn {
+            }
+        }
+    }
 }
